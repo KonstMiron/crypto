@@ -38,7 +38,7 @@ const DomainBanner = () => {
         </div>
 
         <div className="domain-banner__line">
-          <img src="/src/assets/icons/sidebar/line.svg" alt="" />
+          <img src="/icons/sidebar/line.svg" alt="" />
         </div>
 
         <div className="domain-banner__tor-section">

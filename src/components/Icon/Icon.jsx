@@ -2,7 +2,7 @@ import React from 'react';
 import './Icon.scss';
 
 const Icon = ({ name, size = 24, className = '', category = 'ui', ...props }) => {
-  const iconPath = `/src/assets/icons/${category}/${name}.svg`;
+  const iconPath = `/icons/${category}/${name}.svg`;
   const isLogo = name === 'logo';
   const isCategory = category === 'categories';
   const isHeader = category === 'header';
