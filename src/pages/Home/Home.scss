@@ -1,0 +1,30 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.home {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  
+  &__content {
+    display: grid;
+    grid-template-columns: 770px 770px;
+    gap: 16px;
+    align-items: start;
+
+    @media (max-width: 1200px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__products {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-md;
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
+    padding-right: 8px;
+    
+    @include scrollbar;
+  }
+}

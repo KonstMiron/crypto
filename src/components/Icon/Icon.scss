@@ -1,0 +1,17 @@
+@import '../../styles/variables';
+
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  object-fit: contain;
+  
+  &:not(.icon--logo):not(.icon--category):not(.icon--header):not(.icon--sidebar) {
+    filter: brightness(0) invert(1);
+  }
+  
+  &-placeholder {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: $radius-sm;
+    display: inline-block;
+  }
+}
